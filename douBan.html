@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/demo.css">
+    <link rel="stylesheet" href="slider/index.css">
+    <link rel="stylesheet" href="tab/tab.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrappe {
+            position: relative;
+            width: 675px;
+            height: 250px;
+            /* border: 3px solid red; */
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+    </style>
+    <title>豆瓣音乐</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <ul class="nav-l">
+                <li>
+                    <a href="#">豆瓣</a>
+                </li>
+                <li>
+                    <a href="#">读书</a>
+                </li>
+                <li>
+                    <a href="#">电影</a>
+                </li>
+                <li>
+                    <a href="#">音乐</a>
+                </li>
+                <li>
+                    <a href="#">同城</a>
+                </li>
+                <li>
+                    <a href="#">小组</a>
+                </li>
+                <li>
+                    <a href="#">阅读</a>
+                </li>
+                <li>
+                    <a href="#">FM</a>
+                </li>
+                <li>
+                    <a href="#">时间</a>
+                </li>
+                <li>
+                    <a href="#">豆品</a>
+                </li>
+                <li>
+                    <a href="#">更多</a>
+                </li>
+            </ul>
+            <ul class="nav-r">
+                <li>
+                    <a href="#">下载豆瓣客户端</a>
+                </li>
+                <li>
+                    <a href="#">登录</a>
+                </li>
+                <li>
+                    <a href="#">注册</a>
+                </li>
+            </ul>
+        </div>
+        <div class="inp">
+            <div class="inp-box">
+                <div class="img">
+                    <img src="img/lg.png" alt="">
+                </div>
+
+                <div class="input">
+                    <!-- <form action=""> -->
+                        <div class="search-inp-box">
+                            <div class="search-inp" id="inputWrap">
+                                <input type="text" placeholder="唱片名、表演者、条码、ISRC" id="inp">
+                            </div>
+                        </div>
+                        <div class="btnt">
+                            <button></button>
+                        </div>
+                        <div id="search_suggest">
+                            <ul class="search-list">
+                            </ul>
+                        </div>
+                    <!-- </form> -->
+                </div>
+            </div>
+        </div>
+        <div class="nav-b">
+            <div class="nav-b-a">
+                <ul>
+                    <li>
+                        <a href="#">音乐人</a>
+                    </li>
+                    <li>
+                        <a href="#">潮潮豆瓣音乐周</a>
+                    </li>
+                    <li>
+                        <a href="#">金羊毛计划</a>
+                    </li>
+                    <li>
+                        <a href="#">专题</a>
+                    </li>
+                    <li>
+                        <a href="#">排行榜</a>
+                    </li>
+                    <li>
+                        <a href="#">分类游览</a>
+                    </li>
+                    <li>
+                        <a href="#">乐评</a>
+                    </li>
+                    <li>
+                        <a href="#">豆瓣FM</a>
+                    </li>
+                    <li>
+                        <a href="#">歌单</a>
+                    </li>
+                    <li>
+                        <a href="#">阿比鹿音乐奖</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="con">
+            <div class="con-box">
+                <div class="con-box-l">
+                    <div class="wrappe" id="swiper"></div>
+                    <div class="popular-artists section" id="tabWrapper"></div>
+                </div>
+                <div class="con-box-r">
+                    <div class="adv">
+                        <a href="#">
+                            <img src="img/advertising-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="bot">
+                        <div class="det">
+                            <div class="join">
+                                <h2>
+                                    <a href="#">44664</a>
+                                </h2>
+                                <p>音乐人</p>
+                            </div>
+                            <div class="join">
+                                <h2>
+                                    <a href="#">2657</a>
+                                </h2>
+                                <p>播客</p>
+                            </div>
+                            <div class="join">
+                                <h2>
+                                    <a href="#">1113</a>
+                                </h2>
+                                <p>厂牌</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="but">
+                        <a href="#">我要加入</a>
+                    </div>
+                    <div class="tabr">
+                        <div class="headt">
+                            <div class="tag-head">
+                                <span>热门音乐人分类</span>
+                            </div>
+                            <div class="tag-more">
+                                <a href="#">更多</a>
+                            </div>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>
+                                    <a href="#">流行</a>
+                                </th>
+                                <td>
+                                    <a href="#">轻音乐</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="#">摇滚</a>
+                                </th>
+                                <td>
+                                    <a href="#">古典</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="#">电子</a>
+                                </th>
+                                <td>
+                                    <a href="#">世界音乐</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="#">民谣</a>
+                                </th>
+                                <td>
+                                    <a href="#">说唱</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <a href="#">爵士</a>
+                                </th>
+                                <td>
+                                    <a href="#">原声</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <!-- 轮播图 -->
+    <script src="slider/demo.js"></script>
+    <!-- 选项卡 -->
+    <script src="./tab/tab.js"></script>
+    <!-- 数据 -->
+    <script src="./tab/json.js"></script>
+    <!-- 主函数 -->
+    <script src="./js/douBan.js"></script>
+    <!-- 防抖 -->
+    <script src="./js/index.js"></script>
+    <!-- 执行函数 -->
+    <script src="./js/wrap.js"></script>
+</body>
+
+</html>
